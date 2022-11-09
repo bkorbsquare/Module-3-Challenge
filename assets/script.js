@@ -25,8 +25,10 @@ function generatePassword () {
   var passwordLength = window.prompt ("Please enter the number of characters you want. Passwords must contain more than 7 and less than 129 characters.");
   if (passwordLength < 8) {
     window.alert ("Your password must contain more than 7 characters.");
+    return
   } else if (passwordLength > 128) {
-    window.alert ("Your password must contain less than 129 characters.")
+    window.alert ("Your password must contain less than 129 characters.");
+    return
   } else {
     window.alert ("Your password will be " + passwordLength + " characters long.");
   }
