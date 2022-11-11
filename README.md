@@ -3,8 +3,8 @@
 ## Description
 
 - This code displays a random password generator.
-- I wanted to deploy this site to generate a random passowrd using JavaScript.
-- I coded JavaScript using arrays and a for loop.
+- I wanted to deploy this site to generate a random passoword using JavaScript.
+- I coded JavaScript using arrays and a For Loop.
 - Given more time I would fix the 'undefined' error in the for loop.
 
 ## Installation
