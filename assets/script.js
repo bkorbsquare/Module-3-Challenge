@@ -31,8 +31,8 @@ function generatePassword () {
     window.alert ("Your password will be " + passwordLength + " characters long.");
   }
 
-  var numbers = window.confirm ("Do you want numbers in your password?");
-  if (numbers === true) {
+  var hasNumbers = window.confirm ("Do you want numbers in your password?");
+  if (hasNumbers === true) {
     window.alert ("Your password will contain numbers.");
     console.log ("numbers-yes");
     var passwordContent = passwordContentStart.concat (numbers);
@@ -40,8 +40,8 @@ function generatePassword () {
     window.alert ("Your password will not contain numbers.");
   }
 
-  var lowerCases = window.confirm ("Do you want lowercase letters in your password?");
-  if (lowerCases === true) {
+  var hasLowerCases = window.confirm ("Do you want lowercase letters in your password?");
+  if (hasLowerCases === true) {
     window.alert ("Your password will contain lowercase letters.");
     console.log ("lowerCases-yes");
     var passwordContent = passwordContentStart.concat (lowerCases);
@@ -49,8 +49,8 @@ function generatePassword () {
     window.alert ("Your password will not contain lowercase letters.");
   }
 
-  var upperCases = window.confirm ("Do you want uppercase letters in your password?");
-  if (upperCases === true) {
+  var hasUpperCases = window.confirm ("Do you want uppercase letters in your password?");
+  if (hasUpperCases === true) {
     window.alert ("Your password will contain uppercase letters.");
     console.log ("upperCases-yes");
     var passwordContent = passwordContentStart.concat (upperCases);
@@ -58,8 +58,8 @@ function generatePassword () {
     window.alert ("Your password will not contain uppercase letters.");
   }
 
-  var specials = window.confirm ("Do you want special characters in your password?");
-  if (specials === true) {
+  var hasSpecials = window.confirm ("Do you want special characters in your password?");
+  if (hasSpecials === true) {
     window.alert ("Your password will contain special characters.");
     console.log ("specials-yes");
     var passwordContent = passwordContentStart.concat (specials);
