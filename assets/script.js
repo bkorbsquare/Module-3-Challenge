@@ -139,13 +139,11 @@ function generatePassword () {
     }
     // Log the password and it's type
     console.log ("Password String: " + p);
-    console.log (typeof p);
     return p;
   }
   // Notify user of new password
   var newPassword = makePassword();
   window.alert ("Your new password is: " + newPassword);
-  console.log (makePassword());
   return newPassword;
 
 }
