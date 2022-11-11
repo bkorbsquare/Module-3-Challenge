@@ -1,9 +1,10 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
-var specials = "'!','@','#','$','%','^','&','*','(',')'";
-var lowerCases = "'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'";
-var upperCases = "'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'";
-var numbers = "'0','1','2','3','4','5','6','7','8','9'";
+var specials = ['!','@','#','$','%','^','&','*','(',')'];
+var lowerCases = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+var upperCases = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+var numbers = ['0','1','2','3','4','5','6','7','8','9'];
+var passwordContent = '';
 
 // Write password to the #password input
 function writePassword() {
@@ -32,10 +33,7 @@ function generatePassword () {
   var numbers = window.confirm ("Do you want numbers in your password?");
   if (numbers === true) {
     window.alert ("Your password will contain numbers.");
-    console.log (numbers-yes);
-    if (numbers-yes) {
-      var passwordContent = passwordContent.concat(numbers)
-    }
+    console.log ("numbers-yes");
   } else {
     window.alert ("Your password will not contain numbers.");
   }
@@ -43,9 +41,8 @@ function generatePassword () {
   var lowerCases = window.confirm ("Do you want lowercase letters in your password?");
   if (lowerCases === true) {
     window.alert ("Your password will contain lowercase letters.");
-    console.log (lowerCases-yes);
-    if (lowerCases-yes) {
-      var passwordContent = passwordContent.concat(lowerCases)
+    console.log ("lowerCases-yes");
+    if ("lowerCases-yes") {
     }
   } else {
     window.alert ("Your password will not contain lowercase letters.");
@@ -54,9 +51,8 @@ function generatePassword () {
   var upperCases = window.confirm ("Do you want uppercase letters in your password?");
   if (upperCases === true) {
     window.alert ("Your password will contain uppercase letters.");
-    console.log (upperCases-yes);
-    if (upperCases-yes) {
-      var passwordContent = passwordContent.concat(upperCases)
+    console.log ("upperCases-yes");
+    if ("upperCases-yes") {
     }
   } else {
     window.alert ("Your password will not contain uppercase letters.");
@@ -65,9 +61,8 @@ function generatePassword () {
   var specials = window.confirm ("Do you want special characters in your password?");
   if (specials === true) {
     window.alert ("Your password will contain special characters.");
-    console.log (specials-yes);
-    if (specials-yes) {
-      var passwordContent = passwordContent.concat(specials)
+    console.log ("specials-yes");
+    if ("specials-yes") {
     }
   } else {
     window.alert ("Your password will not contain special characters.");
@@ -81,12 +76,10 @@ function generatePassword () {
   console.log (passwordContent);
   console.log (typeof passwordContent);
 
-  passwordContent = passwordContent.replaceALL (",")
-
   function makePassword () {
     var p = '';
     for (var x = 0; x < passwordLength; x++) {
-      p += passwordContent[Math.floor(Math.random() * passwordContent.lenth)];
+      p += passwordContent[Math.floor(Math.random() * passwordContent.length)];
       console.log (p);
     }
     console.log ("Password String: " + p);
@@ -100,7 +93,6 @@ function generatePassword () {
   return newPassword;
 
 }
-
 
 /*
 GIVEN I need a new, secure password
