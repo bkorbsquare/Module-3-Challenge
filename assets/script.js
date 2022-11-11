@@ -5,6 +5,7 @@ var lowerCases = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p
 var upperCases = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
 var numbers = ['0','1','2','3','4','5','6','7','8','9'];
 var passwordContent = [''];
+var passwordContentStart = [''];
 
 // Write password to the #password input
 function writePassword() {
@@ -34,7 +35,7 @@ function generatePassword () {
   if (numbers === true) {
     window.alert ("Your password will contain numbers.");
     console.log ("numbers-yes");
-    var passwordContent = passwordContent.concat (numbers);
+    var passwordContent = passwordContentStart.concat (numbers);
   } else {
     window.alert ("Your password will not contain numbers.");
   }
@@ -43,7 +44,7 @@ function generatePassword () {
   if (lowerCases === true) {
     window.alert ("Your password will contain lowercase letters.");
     console.log ("lowerCases-yes");
-    var passwordContent = passwordContent.concat (lowerCases);
+    var passwordContent = passwordContentStart.concat (lowerCases);
   } else {
     window.alert ("Your password will not contain lowercase letters.");
   }
@@ -52,7 +53,7 @@ function generatePassword () {
   if (upperCases === true) {
     window.alert ("Your password will contain uppercase letters.");
     console.log ("upperCases-yes");
-    var passwordContent = passwordContent.concat (upperCases);
+    var passwordContent = passwordContentStart.concat (upperCases);
   } else {
     window.alert ("Your password will not contain uppercase letters.");
   }
@@ -61,7 +62,7 @@ function generatePassword () {
   if (specials === true) {
     window.alert ("Your password will contain special characters.");
     console.log ("specials-yes");
-    var passwordContent = passwordContent.concat (specials);
+    var passwordContent = passwordContentStart.concat (specials);
   } else {
     window.alert ("Your password will not contain special characters.");
   }
@@ -70,9 +71,7 @@ function generatePassword () {
     window.alert ("You must select at least one variable.")
     return
   }
-  // Log the password and it's type
-  console.log (passwordContent);
-  console.log (typeof passwordContent);
+ 
   // Generate the password
   function makePassword () {
     var p = '';
@@ -80,6 +79,7 @@ function generatePassword () {
       p += passwordContent[Math.floor(Math.random() * passwordContent.length)];
       console.log (p);
     }
+    // Log the password and it's type
     console.log ("Password String: " + p);
     console.log (typeof p);
     return p;
