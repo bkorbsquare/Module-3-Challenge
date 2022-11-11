@@ -62,22 +62,6 @@ function generatePassword () {
     window.alert ("Your password will not contain special characters.");
   }
 
-  if (hasNumbers === true) {
-    var passwordContent = passwordContentStart.concat (numbers);
-  }
-
-  if (hasLowerCases === true) {
-    passwordContent = passwordContentStart.concat (lowerCases);
-  }
-
-  if (hasUpperCases === true) {
-    passwordContent = passwordContentStart.concat (upperCases);
-  }
-
-  if (hasSpecials === true) {
-    passwordContent = passwordContentStart.concat (specials);
-  }
-/*
   if (hasNumbers === true && hasLowerCases === true && hasUpperCases === true && hasSpecials === true) {
     var passwordContent = passwordContentStart.concat (numbers, lowerCases, upperCases, specials)
   }
@@ -136,6 +120,23 @@ function generatePassword () {
 
   if (hasNumbers === true && hasLowerCases === false && hasUpperCases === true && hasSpecials === true) {
     var passwordContent = passwordContentStart.concat (numbers, upperCases, specials)
+  }
+
+  /*
+  if (hasNumbers === true) {
+    passwordContent.push (numbers);
+  }
+
+  if (hasLowerCases === true) {
+    passwordContent.push (lowerCases);
+  }
+
+  if (hasUpperCases === true) {
+    passwordContent.push (upperCases);
+  }
+
+  if (hasSpecials === true) {
+    passwordContent.push (specials);
   }
   */
 
