@@ -2,10 +2,10 @@
 
 ## Description
 
--This code displays a random password generator.
--I wanted to deploy this site to generate a random passowrd using JavaScript.
--I coded JavaScript using arrays and a for loop.
--Given more time I will fix the 'undefined' error in the for loop.
+- This code displays a random password generator.
+- I wanted to deploy this site to generate a random passowrd using JavaScript.
+- I coded JavaScript using arrays and a for loop.
+- Given more time I would fix the 'undefined' error in the for loop.
 
 ## Installation
 
@@ -13,9 +13,9 @@ On GitHub.com, navigate to the main page of the repository. Above the list of fi
 
 ## Usage
 
-Use this project as a reference when building your portfolio.
+Use this project as a reference when building a random password generator.
 
-![image](https://github.com/bkorbsquare/Module-3-Challenge\assets\images\03-javascript-homework-demo.png)
+![image](https://github.com/bkorbsquare/Module-3-Challenge/blob/main/assets/images/Screenshot202022-11-1020234620.jpg)
 
 ## Deployed Site
 https://bkorbsquare.github.io/Module-3-Challenge/
