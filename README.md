@@ -15,7 +15,7 @@ On GitHub.com, navigate to the main page of the repository. Above the list of fi
 
 Use this project as a reference when building a random password generator.
 
-![image](https://github.com/bkorbsquare/Module-3-Challenge/blob/main/assets/images/Screenshot%202022-11-10%20234620.jpg)
+![image](https://github.com/bkorbsquare/Module-3-Challenge/blob/main/assets/images/03-javascript-homework-demo.png)
 
 ## Deployed Site
 https://bkorbsquare.github.io/Module-3-Challenge/
