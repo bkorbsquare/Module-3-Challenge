@@ -120,7 +120,12 @@ function generatePassword () {
     var passwordContent = passwordContentStart.concat (numbers, upperCases, specials)
   }
 
-  /*
+  if (!numbers && !lowerCases && !upperCases && !specials) {
+    window.alert ("You must select at least one variable.")
+    return
+  }
+
+    /*
   if (hasNumbers === true) {
     passwordContent.push (numbers);
   }
@@ -137,11 +142,6 @@ function generatePassword () {
     passwordContent.push (specials);
   }
   */
-
-  if (!numbers && !lowerCases && !upperCases && !specials) {
-    window.alert ("You must select at least one variable.")
-    return
-  }
  
   // Generate the password
   function makePassword () {
