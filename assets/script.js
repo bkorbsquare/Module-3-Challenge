@@ -63,19 +63,19 @@ function generatePassword () {
   }
 
   if (hasNumbers === true) {
-    passwordContent.concat (numbers)
+    var passwordContent = passwordContentStart.concat (numbers);
   }
 
   if (hasLowerCases === true) {
-    passwordContent.concat (lowerCases)
+    passwordContent = passwordContentStart.concat (lowerCases);
   }
 
   if (hasUpperCases === true) {
-    passwordContent.concat (upperCases)
+    passwordContent = passwordContentStart.concat (upperCases);
   }
 
   if (hasSpecials === true) {
-    passwordContent.concat (specials)
+    passwordContent = passwordContentStart.concat (specials);
   }
 /*
   if (hasNumbers === true && hasLowerCases === true && hasUpperCases === true && hasSpecials === true) {
