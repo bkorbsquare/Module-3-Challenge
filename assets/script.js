@@ -53,7 +53,6 @@ function generatePassword () {
   if (hasUpperCases === true) {
     window.alert ("Your password will contain uppercase letters.");
     console.log ("upperCases-yes");
-    var passwordContent = passwordContentStart.concat (upperCases);
   } else {
     window.alert ("Your password will not contain uppercase letters.");
   }
@@ -62,9 +61,68 @@ function generatePassword () {
   if (hasSpecials === true) {
     window.alert ("Your password will contain special characters.");
     console.log ("specials-yes");
-    var passwordContent = passwordContentStart.concat (specials);
   } else {
     window.alert ("Your password will not contain special characters.");
+  }
+
+  if (hasNumbers === true && hasLowerCases === true && hasUpperCases === true && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (numbers, lowerCases, upperCases, specials)
+  }
+
+  if (hasNumbers === true && hasLowerCases === true && hasUpperCases === true && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (numbers, lowerCases, upperCases)
+  }
+
+  if (hasNumbers === true && hasLowerCases === true && hasUpperCases === false && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (numbers, lowerCases)
+  }
+
+  if (hasNumbers === true && hasLowerCases === false && hasUpperCases === false && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (numbers)
+  }
+
+  if (hasNumbers === false && hasLowerCases === true && hasUpperCases === true && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (lowerCases, upperCases, specials)
+  }
+
+  if (hasNumbers === false && hasLowerCases === false && hasUpperCases === true && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (upperCases, specials)
+  }
+
+  if (hasNumbers === false && hasLowerCases === false && hasUpperCases === false && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (specials)
+  }
+
+  if (hasNumbers === false && hasLowerCases === true && hasUpperCases === false && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (lowerCases)
+  }
+
+  if (hasNumbers === false && hasLowerCases === false && hasUpperCases === true && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (upperCases)
+  }
+
+  if (hasNumbers === true && hasLowerCases === false && hasUpperCases === true && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (numbers, upperCases)
+  }
+
+  if (hasNumbers === true && hasLowerCases === false && hasUpperCases === false && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (numbers, specials)
+  }
+
+  if (hasNumbers === false && hasLowerCases === true && hasUpperCases === true && hasSpecials === false) {
+    var passwordContent = passwordContentStart.concat (lowerCases, upperCases)
+  }
+
+  if (hasNumbers === false && hasLowerCases === true && hasUpperCases === false && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (lowerCases, specials)
+  }
+
+  if (hasNumbers === true && hasLowerCases === true && hasUpperCases === false && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (numbers, lowerCases, specials)
+  }
+
+  if (hasNumbers === true && hasLowerCases === false && hasUpperCases === true && hasSpecials === true) {
+    var passwordContent = passwordContentStart.concat (numbers, upperCases, specials)
   }
 
   if (!numbers && !lowerCases && !upperCases && !specials) {
