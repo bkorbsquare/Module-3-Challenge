@@ -32,7 +32,6 @@ function generatePassword () {
   if (hasNumbers === true) {
     window.alert ("Your password will contain numbers.");
     console.log ("numbers-yes");
-    var passwordContent = passwordContentStart.concat (numbers);
   } else {
     window.alert ("Your password will not contain numbers.");
   }
@@ -41,7 +40,6 @@ function generatePassword () {
   if (hasLowerCases === true) {
     window.alert ("Your password will contain lowercase letters.");
     console.log ("lowerCases-yes");
-    var passwordContent = passwordContentStart.concat (lowerCases);
   } else {
     window.alert ("Your password will not contain lowercase letters.");
   }
